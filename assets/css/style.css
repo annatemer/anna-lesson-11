@@ -8,11 +8,12 @@ body {
 
 main {
     margin: auto;
-    width: 900px;
+    width: 1000px;
     min-height: 100vh;
     padding: 15px;
     font-family: 'Open Sans';
     background: white;
+    transition: 0.5s;
 }
 
 header {
@@ -44,6 +45,10 @@ header > span {
     padding: 0px 10px;
 }
 
+.link > a:hover {
+    color: black;
+}
+
 .choice {
     padding: 10px;
     background-color: black;
@@ -55,6 +60,10 @@ header > span {
     font-size: 10pt;
     font-weight: 500;
     word-spacing: 9px;
+}
+
+.choice > a:hover {
+    color: white;
 }
 
 .card-1 {
@@ -93,6 +102,10 @@ header > span {
     font-size: 14pt;
     text-decoration: none;
     margin: 0px;
+}
+
+.variant a:hover {
+    text-decoration: underline;
 }
 
 .variant p {
@@ -162,6 +175,7 @@ button {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    opacity: 0.2;
 }
 
 .card2 > h1 {
@@ -175,6 +189,10 @@ button {
     font-size: 10pt;
     text-align: center; 
     color: rgb(150, 148, 148);
+}
+
+.card2:hover {
+    opacity: 1;
 }
 
 .all {
@@ -199,6 +217,10 @@ button {
     font-size: 10pt;
 }
 
+.info > a:hover {
+    color: black;
+}
+
 .info > a:last-child {
     border-bottom: none;
 }
@@ -211,8 +233,9 @@ button {
 footer {
     background-color: black;
     color: white;
-    padding: 10px;
-    width: 900px;
+    font-size: 10pt;
+    padding: 10px 15px;
+    width: 1000px;
     margin-top: 20px;
     margin-left: -15px;
     margin-bottom: -15px;
